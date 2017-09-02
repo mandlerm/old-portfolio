@@ -40,4 +40,4 @@ But after starting with Codecademy, and then going through the Flatiron Bootcamp
 
 So I decided that this stay-at-home mom would become a software developing mom.  I realized this wasn’t a field beyond my abilities, but simply an avenue in which I needed training.  In the same way I encourage my children to embrace challenges, I’ve chosen to pursue this intellectual challenge with full-force, excited at the prospect of combining my MBA with programming skills that will position me to be a valuable contributor to any company, as well as enable me to put into motion my own side projects.
 
-I expect to be challenged.  I anticipate struggle and frustration and even despair.  But I am looking over that mountain peak to the valley beyond.
+> I expect to be challenged.  I anticipate struggle and frustration and even despair.  But I am looking over that mountain peak to the valley beyond.
