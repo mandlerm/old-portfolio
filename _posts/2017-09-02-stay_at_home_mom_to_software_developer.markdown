@@ -1,16 +1,16 @@
 ---
 layout: post
 title:  "Stay at Home Mom to Software Developer"
-date:   2017-09-02 18:48:56 +0000
+date:   2017-09-02 14:48:56 -0400
 ---
 
 
 #### I'm too old (36).
-#### 
+
 #### I'm not techie.
-#### 
+
 #### I was never that good at math.
-#### 
+
 
 
 These are just some of the excuses, doubts, and fears that have kept me from jumping into code sooner. But a few months ago I came across a label for these insecurities and the lack of confidence  that so freely invades my thoughts: 
