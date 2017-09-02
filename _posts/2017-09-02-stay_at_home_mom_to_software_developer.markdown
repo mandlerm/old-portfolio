@@ -5,11 +5,11 @@ date:   2017-09-02 14:48:56 -0400
 ---
 
 
-#### I'm too old (36).
+### I'm too old (36).
 
-#### I'm not techie.
+### I'm not techie.
 
-#### I was never that good at math.
+### I was never that good at math.
 
 
 
