@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Making my classes play nicely together"
-date:       2017-10-04 18:21:46 +0000
+date:       2017-10-04 14:21:47 -0400
 permalink:  making_my_classes_play_nicely_together
 ---
 
@@ -63,7 +63,3 @@ So that, when we execute our code, it loads the ```project.rb``` which then load
 
 Now when we need to add a dependency, we can do so in ```environment.rb``` and all files are linked as needed.
 
-
-
-
-Inside of ```bin``` we have a 
