@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "RESTful Routes & Deleting Entries"
-date:       2017-11-02 15:36:48 +0000
+date:       2017-11-02 11:36:49 -0400
 permalink:  restful_routes_and_deleting_entries
 ---
 
@@ -43,7 +43,7 @@ must be within a form, which uses an action= and method= to specify the desired 
 
 So the working code looks more like this:
 ```
-<form action="/recipes/#{@recipe.id}"/delete" method="post">
+<form action="/recipes/#{@recipe.id}/delete" method="post">
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" value="delete">
 </form>
