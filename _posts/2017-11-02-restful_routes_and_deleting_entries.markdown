@@ -43,7 +43,7 @@ must be within a form, which uses an action= and method= to specify the desired 
 
 So the working code looks more like this:
 ```
-<form action="/recipes/#{@recipe.id}/delete" method="post">
+<form action="/recipes/<%=@recipe.id%>/delete" method="post">
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" value="delete">
 </form>
