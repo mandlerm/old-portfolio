@@ -6,7 +6,7 @@ permalink:  take_the_time_to_plan
 ---
 
 
-A week into my Rails Portfolio Project and almost back to (alomost) square one...again, the lesson I have learned is 
+A week into my Rails Portfolio Project and almost back to (alomost) square one...again, the lesson I have learned is: 
 
 
 # Take the time to plan!!
