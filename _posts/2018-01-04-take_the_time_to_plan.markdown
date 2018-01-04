@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Take the time to plan"
-date:       2018-01-04 05:29:12 +0000
+date:       2018-01-04 00:29:13 -0500
 permalink:  take_the_time_to_plan
 ---
 
@@ -9,7 +9,7 @@ permalink:  take_the_time_to_plan
 A week into my Rails Portfolio Project and almost back to (alomost) square one...again, the lesson I have learned is 
 
 
-## Take the time to plan!!
+# Take the time to plan!!
 
 I had an idea that I wanted to build.  Solve a problem you have, 'they say', and so I saw this as a great opportunity to kill two birds with one stone.  I'd use my Rails project time to build a simple budgeting tracker that had the exact specs I wanted and none of the specs I didn't want.
 
