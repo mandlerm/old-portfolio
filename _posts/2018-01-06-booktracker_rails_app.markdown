@@ -75,11 +75,12 @@ create_table "book_records", force: :cascade do |t|
 ```
 	
 	
-	```
+```
 	class BookRecord < ApplicationRecord
   belongs_to :user
   belongs_to :book
 ```
+
 
 ```
 class Book < ApplicationRecord
