@@ -21,7 +21,7 @@ The user can rate the book and add comments to that book log. For someone who st
 
 As with any Rails app, the user has full CRUD abilities on their book entries.
 
-### Devise and OmniAuth
+## Devise and OmniAuth
 
 OmniAuth was a requirement, but I chose to use Devise for login, mainly to gain experience with it.  
 
