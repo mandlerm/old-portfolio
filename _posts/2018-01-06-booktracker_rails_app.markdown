@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "BookTracker Rails App"
-date:       2018-01-07 02:02:11 +0000
+date:       2018-01-06 21:02:12 -0500
 permalink:  booktracker_rails_app
 ---
 
@@ -27,7 +27,8 @@ OmniAuth was a requirement, but I chose to use Devise for login, mainly to gain 
 
 ### Models, Schema, Validations and Associations
 
-``` create_table "book_records", force: :cascade do |t|
+``` 
+create_table "book_records", force: :cascade do |t|
     t.integer "user_id"
     t.integer "book_id"
     t.date "date"
