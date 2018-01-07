@@ -6,7 +6,7 @@ permalink:  booktracker_rails_app
 ---
 
 
-## Lessons learned:
+# Lessons learned:
 * planning is half the battle
 * good planning saves time
 * poor planning wastes time 
@@ -14,7 +14,7 @@ permalink:  booktracker_rails_app
 
 You may notice a theme there.  After one full domain model change and multiple tweaks, I finally had a plan that met all of the requirements.  It took a full week of planning combined with trial and error, in addition to input from multiple people before I finally had a working plan.  From there, it was not nearly as hard as I anticipated.
 
-### The plan 
+## The plan 
 As someone who can never have enough bookshelves, a BookTracker seemed a useful tool.  This app allows a user to log a book in their collection, categorizing it based on one of the preset categories or setting their own, i.e. fitness, programming, leisure, cooking, etc.  
 
 The user can rate the book and add comments to that book log. For someone who starts books but doesn't necessarily finish in one go, they can make a comment such as, 'Up to chapter 4. Putting aside to read xyz book, come back to this one later.'  
@@ -25,9 +25,10 @@ As with any Rails app, the user has full CRUD abilities on their book entries.
 
 OmniAuth was a requirement, but I chose to use Devise for login, mainly to gain experience with it.  
 
-### Models, Schema, Validations and Associations
+## Models, Schema, Validations and Associations
 
-``` 
+ 
+```
 create_table "book_records", force: :cascade do |t|
     t.integer "user_id"
     t.integer "book_id"
@@ -71,7 +72,8 @@ create_table "book_records", force: :cascade do |t|
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
-	```
+```
+	
 	
 	```
 	class BookRecord < ApplicationRecord
@@ -111,7 +113,7 @@ class User < ApplicationRecord
 
 I had minimal required attributes for creating a new book.  As one who can barely remember the title of books I read, let alone the author, I did not want to over-require with validations on the book class.  The only required attributes for creating a new book are title and category.  
 
-### Strengths and Weaknesses 
+## Strengths and Weaknesses 
 I am much more area of my weaknesses than my strengths, but I'll give it a fair attempt:
 After much refactoring, I think my code is fairly clean and DRY.  
 I made use of partials to clean up views and elimiate repetition with forms.
