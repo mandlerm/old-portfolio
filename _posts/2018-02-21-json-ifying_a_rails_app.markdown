@@ -34,36 +34,31 @@ const bindIndexPage = () => {
  This attaches a click handler onto the button that has a class="allBooks"
  
  
-```
-const url = e.currentTarget.attributes[1].value
+ const url = e.currentTarget.attributes[1].value
 
     fetch(`${url}.json`, {
       credentials: 'include'
     })
         .then(res => res.json())
         .then(data => {
-```
-     
-		 
+    
 		 Retrieves the URL target
 		 Uses the fetch api to make the data request to the backend. 
 		 Take the retrieved data and puts it into json format
 
-	```	
+
           let uniqueBooks = UniqueBookList(data)
-					```
+				
 		 returns an array of unique book objects so that no book title is repeated
 
-```
             $(".app-container").html('').append(`<h1>Your Books</h1><table><tbody class='book-list'><tr>
                     <th class="table"> Title </th>
                     <th class="table"> Author </th>
                     <th class="table"> Category </th>
                     </tbody></table>`)
-```
+
 Creates the table format I will want to use as the display
 
-```
           uniqueBooks.forEach(book => {
             book.user_id = data.id
             let newBook = new Book(book)
@@ -72,7 +67,7 @@ Creates the table format I will want to use as the display
           })
       })
     })}
-```
+
 Iterates through each book object, utilizes helper methods to format the books data and on each iteration appends that formatted book data onto the webpage.
 
 The requirements for this project were that an index page, a view and a form were converted over, so much of the original code remains where a complete http request cycle takes place, however I now have the confidence and skill to know that I can either convert an existing app or write one from scratch that uses AJAX to create a single page app.
