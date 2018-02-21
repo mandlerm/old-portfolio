@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "JSON-ifying a Rails App"
-date:       2018-02-21 17:11:18 +0000
+date:       2018-02-21 12:11:19 -0500
 permalink:  json-ifying_a_rails_app
 ---
 
@@ -34,14 +34,17 @@ const bindIndexPage = () => {
  This attaches a click handler onto the button that has a class="allBooks"
  
  
- ```   const url = e.currentTarget.attributes[1].value
+```
+const url = e.currentTarget.attributes[1].value
 
     fetch(`${url}.json`, {
       credentials: 'include'
     })
         .then(res => res.json())
         .then(data => {
-     ```
+```
+     
+		 
 		 Retrieves the URL target
 		 Uses the fetch api to make the data request to the backend. 
 		 Take the retrieved data and puts it into json format
