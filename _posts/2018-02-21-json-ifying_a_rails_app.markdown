@@ -35,7 +35,6 @@ const bindIndexPage = () => {
 
  This attaches a click handler onto the button that has a class="allBooks"
  
- ```
    const url = e.currentTarget.attributes[1].value
 
     fetch(`${url}.json`, {
@@ -43,14 +42,13 @@ const bindIndexPage = () => {
     })
         .then(res => res.json())
         .then(data => {
-```
     
 		 Retrieves the URL target
 		 Uses the fetch api to make the data request to the backend. 
 		 Take the retrieved data and puts it into json format
 
 
-`let uniqueBooks = UniqueBookList(data)`
+      ```    let uniqueBooks = UniqueBookList(data)```
 				
 		 returns an array of unique book objects so that no book title is repeated
 
@@ -65,15 +63,15 @@ const bindIndexPage = () => {
 Creates the table format I will want to use as the display
 
 ```
-				uniqueBooks.forEach(book => {
-					book.user_id = data.id
-					let newBook = new Book(book)
-					let bookHtml = newBook.formatIndex()
-					$(".book-list").append(bookHtml)
-				})
-		})
-	})}
+uniqueBooks.forEach(book => {
+	book.user_id = data.id
+	let newBook = new Book(book)
+	let bookHtml = newBook.formatIndex()
+	$(".book-list").append(bookHtml)
+})})
+})}
 ```
+
 
 
 Iterates through each book object, utilizes helper methods to format the books data and on each iteration appends that formatted book data onto the webpage.
